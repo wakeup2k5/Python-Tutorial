@@ -16,5 +16,3 @@ while count <= quantityRequested:
         num1 = num2
         num2 = nextNum
     count += 1
-
-fibonacci = [0, 1]
