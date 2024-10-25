@@ -31,5 +31,5 @@ def merge_sort(arr):
     
     return arr
     
-randomNumbers = [ 555, 8, 3, 0, 1, 7, 5, 2, 9, 4, 6 , 11, 200, 4, 2]
+randomNumbers = [ 555, 8, 3, 0, 1, 7, 5, 2, 9, 4, 6 , 11, 200, 4, 2, "C"]
 print(merge_sort(randomNumbers))
