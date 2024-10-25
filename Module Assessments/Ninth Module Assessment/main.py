@@ -11,7 +11,7 @@ def merge_sort(arr):
         i = j = k = 0
 
         while i < len(leftArr) and j < len(rightArr):
-            if leftArr[i] > rightArr[j]:
+            if leftArr[i] < rightArr[j]:
                 arr[k] = leftArr[i]
                 i += 1
             else:
@@ -31,5 +31,5 @@ def merge_sort(arr):
     
     return arr
     
-randomNumbers = [ 555, 8, 3, 0, 1, 7, 5, 2, 9, 4, 6 , 11, 200, 4, 2, "C"]
+randomNumbers = [ 555, 8, 3, 0, 1, 7, 5, 2, 9, 4, 6 , 11, 200, 4, 2]
 print(merge_sort(randomNumbers))
