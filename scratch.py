@@ -1,22 +1,54 @@
+def main():  
 
-def main(): 
+     
 
-    ls=[16,9,8] 
+    class Person: 
 
-    idx=2
+        def __init__(self, name, age): 
+
+            self.name=name 
+
+            self.age=age 
+
+  
+
+    ## Type your code below to complete the Student class creaton 
+
+
+    class Student(Person):
+        
+        
+        
+        def __init__(self, name, age, id):
+            super().__init__(name,age)
+            self.id = id
+
+        
+            
+
+  
+
+    ########## 
+
+         
+
+  
+
+    obj1=Student("John", 23, 1234)  # object instance from the Student class 
+
     
-    value_extracted_successfully = False
 
-    try:
-        value_to_print = ls[idx]
-        value_extracted_successfully = True
-    except:
-        value_extracted_successfully = False
-    finally:
-        print('Outcome: ' + str(value_extracted_successfully))
-    
-    
-    return value_extracted_successfully
+    ## Type your code to get the attributes dictionary for the obj1  
+
+    dict_att= obj1.__dict__
+
+    ############################ 
+
+    print(dict_att.keys()) 
+
+  
+
+    return dict_att.keys()
 
   
 
