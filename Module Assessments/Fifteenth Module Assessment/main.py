@@ -5,11 +5,11 @@
 def add_new_grade(grades_data):
     new_course = input("Enter the course name: ")
     new_grade = input("Enter the numeric grade (0 - 100): ")
-    if new_course != "" and new_grade != "":
+    if new_course != "" and new_grade != "" and type(new_grade) == int:
         grades_data.write(new_course + "\n")
         grades_data.write(new_grade + "\n")
     else:
-        print("Both course and grade are required.  Please try again.")
+        print("Course must be provided and grade must be an integer.  Please try again.")
 
 
 def view_previous_grades(grades_data):
