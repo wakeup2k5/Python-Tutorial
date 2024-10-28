@@ -1,8 +1,10 @@
+import
+
 def main(): 
 
     dictionary={"a": "apple", "b":"banana"} 
 
-    key="b" 
+    key="c" 
 
     value_extracted_successfully = False
 

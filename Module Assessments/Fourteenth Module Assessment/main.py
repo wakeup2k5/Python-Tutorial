@@ -23,7 +23,6 @@ try:
         entry_date_time_str = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         entries_data.write(str(entry_date_time_str) + ": " + new_entry + "\n")
     elif menu_options[selection] == 'View Previous Entries':
-        print(entries_data.read())
         entries_data.seek(0)
         previous_entries = entries_data.readlines()
         for entry in previous_entries:

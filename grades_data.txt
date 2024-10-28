@@ -1,0 +1,6 @@
+Math
+80
+Programming
+90
+Geology
+75
