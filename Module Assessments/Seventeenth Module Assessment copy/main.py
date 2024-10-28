@@ -11,12 +11,21 @@ class Student:
         for key in self.grades:
             print(key + ": " + str(self.grades[key]))
 
+    def displayStudentAverage(self):
+        countOfGrades = len(self.grades)
+        sumOfGrades = 0
+        for key in self.grades:
+            sumOfGrades += int(self.grades[key])
+        averageOfGrades = sumOfGrades / countOfGrades
+        print("Grades Average: " + str(averageOfGrades))  
+
     def displayStudentInformation(self):
         print("Name: " + self.name)
         print("Age: " + str(self.age))
         self.displayGrades()
+        self.displayStudentAverage()
 
-student1Grades = {"Math":90, "Physics": 85, "English": 75}
+student1Grades = {"Math":90, "Physics": 85, "English": 65}
 student1 = Student("James Collins", 21, student1Grades)
 
 student2Grades = {"Math":95, "Physics": 80, "English": 75}
