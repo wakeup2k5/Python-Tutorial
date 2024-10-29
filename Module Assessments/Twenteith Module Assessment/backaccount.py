@@ -19,11 +19,14 @@ class BankAccount(object):
         transactionLog.close()
 
     def displayTransactionLog(self):
-        print("Transaction History")
-        transactionLog = open(self.filename, "r")
-        transactionLogEntries = transactionLog.readlines()
-        for logEntry in transactionLogEntries:
-            print(logEntry)
+        try:
+            print("Transaction History")
+            transactionLog = open(self.filename, "r")
+            transactionLogEntries = transactionLog.readlines()
+            for logEntry in transactionLogEntries:
+                print(logEntry)
+        except:
+            print("Error reading transaction log")
 
     def deposit(self, amount):
         self.balance += amount

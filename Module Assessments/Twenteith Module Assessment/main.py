@@ -45,8 +45,7 @@ def main():
     print("getUsername: ", jamesAccount.getUsername())
     print("getAccountType: ", jamesAccount.getAccountType())
     print("getAccountNumber: ", jamesAccount.getAccountNumber())
-    print("getAccountNumber: ", jamesAccount.getAccountNumber())
-
+    
     input("Press Enter to continue")
     clear()
 
