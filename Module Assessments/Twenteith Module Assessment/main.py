@@ -11,7 +11,7 @@
 # Getting the holder name.
 # Keeping a transaction history.
 
-from backaccount import BankAccount
+from bankaccount import BankAccount
 import os
 clear = lambda: os.system('cls')
 
