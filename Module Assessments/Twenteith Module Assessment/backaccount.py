@@ -25,6 +25,7 @@ class BankAccount(object):
             transactionLogEntries = transactionLog.readlines()
             for logEntry in transactionLogEntries:
                 print(logEntry)
+            transactionLog.close()
         except:
             print("Error reading transaction log")
 
